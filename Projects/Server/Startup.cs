@@ -43,7 +43,6 @@ namespace Server
 				return tracer;
 			});
 
-			//services.AddTransient<IValuesRepository, ValuesRepository>();
 			services.AddTransientWithInterception<IValuesRepository, ValuesRepository>(m => m.InterceptBy<JaegerInterceptor>().UseMethodConvention<AllMethodsConvention>());
 		}
 
