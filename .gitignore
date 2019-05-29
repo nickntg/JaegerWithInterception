@@ -6,6 +6,5 @@ _Resharper*/
 packages/
 Debug/
 .vs/
-lib/
 packageexplorer/
 *.nupkg
